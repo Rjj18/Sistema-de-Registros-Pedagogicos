@@ -38,10 +38,6 @@ Estrutura de colunas conforme configurado no AppSheet.
 | Descricao_Atividade | LongText | Não | Não | Relato pedagógico |
 | Imagem | Image | Não | Sim | Armazenamento por caminho relativo no Drive |
 
-Notas recomendadas:
-- Padronize nomes de colunas (snake_case) e evite espaços para facilitar expressões e integrações.
-- Defina validações e valores iniciais para reduzir inconsistências.
-
 ### Tabelas Auxiliares
 - Professores (Lookup): converte USEREMAIL() em nome amigável, mitigando limitações/depreciações de funções de nome.
 - Home (Singleton): configurações e ativos estáticos da Landing Page, desacoplando conteúdo da interface.
@@ -60,9 +56,6 @@ As imagens são organizadas por prefixos estruturados para facilitar auditoria e
 - Prefixo sugerido:
   - CONCATENATE([Turma], "_", [Docente], "_", TEXT(NOW(), "YYYY-MM-DD"))
 
-Recomendações:
-- Evite dados sensíveis no nome do arquivo.
-- Considere mascarar e-mails ou substituir por IDs quando necessário.
 
 ## Privacidade e Conformidade (LGPD)
 O uso deve respeitar a LGPD no ambiente escolar.
@@ -74,7 +67,7 @@ O uso deve respeitar a LGPD no ambiente escolar.
 Projeto desenvolvido em modelo de co-criação humano-máquina.
 - Arquiteto de IA: Gemini 3 Flash
 - Papel da IA: apoio na estruturação do modelo de dados, depuração de expressões, documentação e UX
-- Validação humana: decisões validadas pelo Coordenador Pedagógico Roger Oliveira
+- Validação humana: decisões validadas pelo autor.
 
 ## Licença
 Distribuído sob licença MIT.
